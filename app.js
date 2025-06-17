@@ -17,6 +17,7 @@ const maxOfTwoNumbers = (x, y) => {
 }
 
 console.log('Exercise 1 Result:', maxOfTwoNumbers(3, 9));
+
 /*
 Exercise 2: isAdult()
 
@@ -27,11 +28,9 @@ Example: isAdult(21) should return 'Adult'.
 
 Complete the exercise in the space below:
 */
-const adult = 'You are an adult!';
-const notAdult = 'You are a minor!';
-let age = 22;
-
 const isAdult = (age) => {
+    const adult = 'You are an adult!';
+    const notAdult = 'You are a minor!';
     if (age >= 21) {
         return adult;
     } else {
@@ -39,7 +38,8 @@ const isAdult = (age) => {
     }
 };
 
-console.log('Exercise 2 Result:', isAdult(age));
+console.log('Exercise 2 Result:', isAdult(22));
+
 /*
 Exercise 3: isCharAVowel()
 
@@ -52,10 +52,9 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-const notVowel = 'y';
-const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 const isCharAVowel = (char) => {
+    const vowels = ['a', 'e', 'i', 'o', 'u'];
     if (vowels.includes(char.toLowerCase())) {
         return `${char}, is a vowel!`;
     } else {
@@ -64,6 +63,7 @@ const isCharAVowel = (char) => {
 };
 
 console.log('Exercise 3 Result:', isCharAVowel('a'));
+
 /*
 Exercise 4: generateEmail()
 
@@ -76,18 +76,16 @@ should return 'johnsmith@example.com'.
 Complete the exercise in the space below:
 */
 
-let firstName = 'Oliver';
-let lastName = 'Levine';
-let domain = 'icloud.com';
+const generateEmail = (firstName, lastName, domain) => {
+    // Removing spaces and converting everything to lowercase
+    firstName = firstName.replace(/\s+/g, '').toLowerCase();
+    lastName = lastName.replace(/\s+/g, '').toLowerCase();
+    domain = domain.replace(/\s+/g, '').toLowerCase();
 
-// Removing spaces and converting everything to lowercase
-firstName = firstName.replace(/\s+/g, '').toLowerCase();
-lastName = lastName.replace(/\s+/g, '').toLowerCase();
-domain = domain.replace(/\s+/g, '').toLowerCase();
+    return `${firstName}${lastName}@${domain}`;
+};
 
-let email = `${firstName}${lastName}@${domain}`;
-
-console.log('Exercise 4 Result:', email);
+console.log('Exercise 4 Result:', generateEmail('Oliver', 'Levine', 'icloud.com'));
 
 /*
 Exercise 5: greetUser()
@@ -101,12 +99,11 @@ Example: greetUser('Sam', 'morning') should return "Good morning, Sam!"
 Complete the exercise in the space below:
 */
 
-const morning = 'Good morning,';
-const afternoon = 'Good afternoon,';
-const evening = 'Good evening,';
-let user = 'Sam';
-
 const greetUser = (name, timeOfDay) => {
+    const morning = 'Good morning,';
+    const afternoon = 'Good afternoon,';
+    const evening = 'Good evening,';
+
     if (timeOfDay === 'morning') {
         return `${morning} ${name}!`;
     } else if (timeOfDay === 'afternoon') {
@@ -119,6 +116,7 @@ const greetUser = (name, timeOfDay) => {
 };
 
 console.log('Exercise 5 Result:', greetUser("Sam", "morning"));
+
 /*
 Exercise 6: maxOfThree()
 
@@ -141,6 +139,7 @@ const maxOfThree = (x, y, z) => {
 }
 
 console.log('Exercise 6 Result:', maxOfThree(17, 4, 9));
+
 /*
 Exercise 7: calculateTip()
 
@@ -234,7 +233,7 @@ Example: calculateGrade(100) should return A.
 Complete the exercise in the space below:
 */
 
-function calculateGrade(score) {
+const calculateGrade = (score) => {
     if (score >= 90) {
         return 'A';
     } else if (score >= 80) {
@@ -246,7 +245,7 @@ function calculateGrade(score) {
     } else {
         return 'F';
     }
-}
+};
 
 console.log('Exercise 10 Result:', calculateGrade(100));
 
@@ -266,14 +265,13 @@ Example: createUsername('Samantha', 'Green') should return 'SamGre13'.
 Complete the exercise in the space below:
 */
 
-function createUsername(firstName, lastName) {
+const createUsername = (firstName, lastName) => {
     const firstPart = firstName.slice(0, 3);
     const lastPart = lastName.slice(0, 3);
     const totalLength = firstName.length + lastName.length;
     return firstPart + lastPart + totalLength;
-}
+};
 
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
-
-console.log(`End of tasks.`)
+console.log(`End of tasks.`);
