@@ -1,4 +1,4 @@
-/*
+/* 
 Exercise 1: maxOfTwoNumbers()
 
 In this exercise, create a function named maxOfTwoNumbers. 
@@ -52,7 +52,7 @@ Example: isCharAVowel('a') should return true.
 
 Complete the exercise in the space below:
 */
-const letter = 'y';
+const notVowel = 'y';
 const vowels = ['a', 'e', 'i', 'o', 'u'];
 
 const isCharAVowel = (char) => {
@@ -63,7 +63,7 @@ const isCharAVowel = (char) => {
     }
 };
 
-console.log('Exercise 3 Result:', isCharAVowel(letter));
+console.log('Exercise 3 Result:', isCharAVowel('a'));
 /*
 Exercise 4: generateEmail()
 
@@ -140,7 +140,7 @@ const maxOfThree = (x, y, z) => {
   }
 }
 
-console.log('Exercise 6 Result:', maxOfThree(5, 11, 8));
+console.log('Exercise 6 Result:', maxOfThree(17, 4, 9));
 /*
 Exercise 7: calculateTip()
 
@@ -248,7 +248,7 @@ function calculateGrade(score) {
     }
 }
 
-console.log('Exercise 10 Result:', calculateGrade(85));
+console.log('Exercise 10 Result:', calculateGrade(100));
 
 /*
 Exercise 11: createUsername()
@@ -276,5 +276,4 @@ function createUsername(firstName, lastName) {
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
 
-
-console.log(`End of task.`)
+console.log(`End of tasks.`)
