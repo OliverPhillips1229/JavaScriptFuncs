@@ -184,7 +184,8 @@ const convertTemperature = (temp, scale) => {
     }
 };
 
-console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+console.log('Exercise 8 Result Celsius Converted:', convertTemperature(32, 'C'));
+console.log('Exercise 8 Result Fahrenheit Converted:', convertTemperature(32, 'F'));
 
 /*
 Exercise 9: basicCalculator()
