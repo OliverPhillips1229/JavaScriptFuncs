@@ -55,10 +55,11 @@ Complete the exercise in the space below:
 
 const isCharAVowel = (char) => {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
-    if (vowels.includes(char.toLowerCase())) {
-        return vowels.includes(char.toLowerCase());
+    const  result = vowels.includes(char.toLowerCase());
+    if (result) {
+        return result;
     } else {
-        return vowels.includes(char.toLowerCase());
+        return result;
     }
 };
 
