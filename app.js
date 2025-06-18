@@ -62,7 +62,7 @@ const isCharAVowel = (char) => {
     }
 };
 
-console.log('Exercise 3 Result:', isCharAVowel('a'));
+console.log('Exercise 3 Result:', isCharAVowel('A'));
 
 /*
 Exercise 4: generateEmail()
