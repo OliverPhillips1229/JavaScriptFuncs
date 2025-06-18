@@ -86,7 +86,7 @@ const generateEmail = (firstName, lastName, domain) => {
     return `${firstName}${lastName}@${domain}`;
 };
 
-console.log('Exercise 4 Result:', generateEmail('Oliver', 'Levine', 'icloud.com'));
+console.log('Exercise 4 Result:', generateEmail('Oliver ', 'Levine ', 'icloud. com'));
 
 /*
 Exercise 5: greetUser()
