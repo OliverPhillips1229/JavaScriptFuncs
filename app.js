@@ -56,9 +56,9 @@ Complete the exercise in the space below:
 const isCharAVowel = (char) => {
     const vowels = ['a', 'e', 'i', 'o', 'u'];
     if (vowels.includes(char.toLowerCase())) {
-        return `${char}, is a vowel!`;
+        return vowels.includes(char.toLowerCase());
     } else {
-        return `${char}, is not a vowel!`;
+        return vowels.includes(char.toLowerCase());
     }
 };
 
