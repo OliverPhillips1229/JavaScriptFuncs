@@ -31,7 +31,7 @@ Complete the exercise in the space below:
 const isAdult = (age) => {
     const adult = 'You are an adult!';
     const notAdult = 'You are a minor!';
-    if (age >= 21) {
+    if (age >= 18) {
         return adult;
     } else {
         return notAdult;
