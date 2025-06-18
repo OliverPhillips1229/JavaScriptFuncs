@@ -78,7 +78,7 @@ Complete the exercise in the space below:
 */
 
 const generateEmail = (firstName, lastName, domain) => {
-    // Removing spaces and converting everything to lowercase
+    // Removing spaces and converting everything to lowercase for user errors
     firstName = firstName.replace(/\s+/g, '').toLowerCase();
     lastName = lastName.replace(/\s+/g, '').toLowerCase();
     domain = domain.replace(/\s+/g, '').toLowerCase();
