@@ -276,3 +276,5 @@ const createUsername = (firstName, lastName) => {
 console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
 
 console.log(`End of tasks.`);
+
+// a cmonnet
